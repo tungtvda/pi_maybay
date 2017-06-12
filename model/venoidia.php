@@ -1,0 +1,78 @@
+<?php
+class venoidia
+{
+    public $Id,$DanhMucId,$Name,$Name_en,$MaChuyenBay,$DiemDi,$DiemDi_en,$DiemDen,$DiemDen_en,$NgayDi,$Gia,$Gia_en,$Img,$Img_hang,$NoiDung,$NoiDung_en,$Title,$Title_en,$Keyword,$Description,$Created;
+    public function venoidia($data=array())
+    {
+    $this->Id=isset($data['Id'])?$data['Id']:'';
+    $this->DanhMucId=isset($data['DanhMucId'])?$data['DanhMucId']:'';
+    $this->Name=isset($data['Name'])?$data['Name']:'';
+    $this->Name_en=isset($data['Name_en'])?$data['Name_en']:'';
+    $this->MaChuyenBay=isset($data['MaChuyenBay'])?$data['MaChuyenBay']:'';
+    $this->DiemDi=isset($data['DiemDi'])?$data['DiemDi']:'';
+    $this->DiemDi_en=isset($data['DiemDi_en'])?$data['DiemDi_en']:'';
+    $this->DiemDen=isset($data['DiemDen'])?$data['DiemDen']:'';
+    $this->DiemDen_en=isset($data['DiemDen_en'])?$data['DiemDen_en']:'';
+    $this->NgayDi=isset($data['NgayDi'])?$data['NgayDi']:'';
+    $this->Gia=isset($data['Gia'])?$data['Gia']:'';
+    $this->Gia_en=isset($data['Gia_en'])?$data['Gia_en']:'';
+    $this->Img=isset($data['Img'])?$data['Img']:'';
+    $this->Img_hang=isset($data['Img_hang'])?$data['Img_hang']:'';
+    $this->NoiDung=isset($data['NoiDung'])?$data['NoiDung']:'';
+    $this->NoiDung_en=isset($data['NoiDung_en'])?$data['NoiDung_en']:'';
+    $this->Title=isset($data['Title'])?$data['Title']:'';
+    $this->Title_en=isset($data['Title_en'])?$data['Title_en']:'';
+    $this->Keyword=isset($data['Keyword'])?$data['Keyword']:'';
+    $this->Description=isset($data['Description'])?$data['Description']:'';
+    $this->Created=isset($data['Created'])?$data['Created']:'';
+          $this->encode();
+    }
+    public function encode()
+        {
+            $this->Id=addslashes($this->Id);
+            $this->DanhMucId=addslashes($this->DanhMucId);
+            $this->Name=addslashes($this->Name);
+            $this->Name_en=addslashes($this->Name_en);
+            $this->MaChuyenBay=addslashes($this->MaChuyenBay);
+            $this->DiemDi=addslashes($this->DiemDi);
+            $this->DiemDi_en=addslashes($this->DiemDi_en);
+            $this->DiemDen=addslashes($this->DiemDen);
+            $this->DiemDen_en=addslashes($this->DiemDen_en);
+            $this->NgayDi=addslashes($this->NgayDi);
+            $this->Gia=addslashes($this->Gia);
+            $this->Gia_en=addslashes($this->Gia_en);
+            $this->Img=addslashes($this->Img);
+            $this->Img_hang=addslashes($this->Img_hang);
+            $this->NoiDung=addslashes($this->NoiDung);
+            $this->NoiDung_en=addslashes($this->NoiDung_en);
+            $this->Title=addslashes($this->Title);
+            $this->Title_en=addslashes($this->Title_en);
+            $this->Keyword=addslashes($this->Keyword);
+            $this->Description=addslashes($this->Description);
+            $this->Created=addslashes($this->Created);
+        }
+    public function decode()
+        {
+            $this->Id=stripslashes($this->Id);
+            $this->DanhMucId=stripslashes($this->DanhMucId);
+            $this->Name=stripslashes($this->Name);
+            $this->Name_en=stripslashes($this->Name_en);
+            $this->MaChuyenBay=stripslashes($this->MaChuyenBay);
+            $this->DiemDi=stripslashes($this->DiemDi);
+            $this->DiemDi_en=stripslashes($this->DiemDi_en);
+            $this->DiemDen=stripslashes($this->DiemDen);
+            $this->DiemDen_en=stripslashes($this->DiemDen_en);
+            $this->NgayDi=stripslashes($this->NgayDi);
+            $this->Gia=stripslashes($this->Gia);
+            $this->Gia_en=stripslashes($this->Gia_en);
+            $this->Img=stripslashes($this->Img);
+            $this->Img_hang=stripslashes($this->Img_hang);
+            $this->NoiDung=stripslashes($this->NoiDung);
+            $this->NoiDung_en=stripslashes($this->NoiDung_en);
+            $this->Title=stripslashes($this->Title);
+            $this->Title_en=stripslashes($this->Title_en);
+            $this->Keyword=stripslashes($this->Keyword);
+            $this->Description=stripslashes($this->Description);
+            $this->Created=stripslashes($this->Created);
+        }
+}

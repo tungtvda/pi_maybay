@@ -1,0 +1,84 @@
+<?php
+class dichvu
+{
+    public $Id,$ViTri,$Name,$Name_en,$Img,$MoTaNgan,$MoTaNgan_en,$NoiDung,$NoiDung_en,$Icon,$Icon_gioithieu,$Avatar,$Name_ht,$MoTaNgan_ht,$MoTaNgan_ht_en,$Phone,$Email,$Yahoo,$Skype,$Title,$Title_en,$Keyword,$Description;
+    public function dichvu($data=array())
+    {
+    $this->Id=isset($data['Id'])?$data['Id']:'';
+    $this->ViTri=isset($data['ViTri'])?$data['ViTri']:'';
+    $this->Name=isset($data['Name'])?$data['Name']:'';
+    $this->Name_en=isset($data['Name_en'])?$data['Name_en']:'';
+    $this->Img=isset($data['Img'])?$data['Img']:'';
+    $this->MoTaNgan=isset($data['MoTaNgan'])?$data['MoTaNgan']:'';
+    $this->MoTaNgan_en=isset($data['MoTaNgan_en'])?$data['MoTaNgan_en']:'';
+    $this->NoiDung=isset($data['NoiDung'])?$data['NoiDung']:'';
+    $this->NoiDung_en=isset($data['NoiDung_en'])?$data['NoiDung_en']:'';
+    $this->Icon=isset($data['Icon'])?$data['Icon']:'';
+    $this->Icon_gioithieu=isset($data['Icon_gioithieu'])?$data['Icon_gioithieu']:'';
+    $this->Avatar=isset($data['Avatar'])?$data['Avatar']:'';
+    $this->Name_ht=isset($data['Name_ht'])?$data['Name_ht']:'';
+    $this->MoTaNgan_ht=isset($data['MoTaNgan_ht'])?$data['MoTaNgan_ht']:'';
+    $this->MoTaNgan_ht_en=isset($data['MoTaNgan_ht_en'])?$data['MoTaNgan_ht_en']:'';
+    $this->Phone=isset($data['Phone'])?$data['Phone']:'';
+    $this->Email=isset($data['Email'])?$data['Email']:'';
+    $this->Yahoo=isset($data['Yahoo'])?$data['Yahoo']:'';
+    $this->Skype=isset($data['Skype'])?$data['Skype']:'';
+    $this->Title=isset($data['Title'])?$data['Title']:'';
+    $this->Title_en=isset($data['Title_en'])?$data['Title_en']:'';
+    $this->Keyword=isset($data['Keyword'])?$data['Keyword']:'';
+    $this->Description=isset($data['Description'])?$data['Description']:'';
+          $this->encode();
+    }
+    public function encode()
+        {
+            $this->Id=addslashes($this->Id);
+            $this->ViTri=addslashes($this->ViTri);
+            $this->Name=addslashes($this->Name);
+            $this->Name_en=addslashes($this->Name_en);
+            $this->Img=addslashes($this->Img);
+            $this->MoTaNgan=addslashes($this->MoTaNgan);
+            $this->MoTaNgan_en=addslashes($this->MoTaNgan_en);
+            $this->NoiDung=addslashes($this->NoiDung);
+            $this->NoiDung_en=addslashes($this->NoiDung_en);
+            $this->Icon=addslashes($this->Icon);
+            $this->Icon_gioithieu=addslashes($this->Icon_gioithieu);
+            $this->Avatar=addslashes($this->Avatar);
+            $this->Name_ht=addslashes($this->Name_ht);
+            $this->MoTaNgan_ht=addslashes($this->MoTaNgan_ht);
+            $this->MoTaNgan_ht_en=addslashes($this->MoTaNgan_ht_en);
+            $this->Phone=addslashes($this->Phone);
+            $this->Email=addslashes($this->Email);
+            $this->Yahoo=addslashes($this->Yahoo);
+            $this->Skype=addslashes($this->Skype);
+            $this->Title=addslashes($this->Title);
+            $this->Title_en=addslashes($this->Title_en);
+            $this->Keyword=addslashes($this->Keyword);
+            $this->Description=addslashes($this->Description);
+        }
+    public function decode()
+        {
+            $this->Id=stripslashes($this->Id);
+            $this->ViTri=stripslashes($this->ViTri);
+            $this->Name=stripslashes($this->Name);
+            $this->Name_en=stripslashes($this->Name_en);
+            $this->Img=stripslashes($this->Img);
+            $this->MoTaNgan=stripslashes($this->MoTaNgan);
+            $this->MoTaNgan_en=stripslashes($this->MoTaNgan_en);
+            $this->NoiDung=stripslashes($this->NoiDung);
+            $this->NoiDung_en=stripslashes($this->NoiDung_en);
+            $this->Icon=stripslashes($this->Icon);
+            $this->Icon_gioithieu=stripslashes($this->Icon_gioithieu);
+            $this->Avatar=stripslashes($this->Avatar);
+            $this->Name_ht=stripslashes($this->Name_ht);
+            $this->MoTaNgan_ht=stripslashes($this->MoTaNgan_ht);
+            $this->MoTaNgan_ht_en=stripslashes($this->MoTaNgan_ht_en);
+            $this->Phone=stripslashes($this->Phone);
+            $this->Email=stripslashes($this->Email);
+            $this->Yahoo=stripslashes($this->Yahoo);
+            $this->Skype=stripslashes($this->Skype);
+            $this->Title=stripslashes($this->Title);
+            $this->Title_en=stripslashes($this->Title_en);
+            $this->Keyword=stripslashes($this->Keyword);
+            $this->Description=stripslashes($this->Description);
+        }
+}

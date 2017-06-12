@@ -1,0 +1,87 @@
+<?php
+class datve
+{
+    public $Id,$TrangThaiThanhToan,$MaDatVe,$HangBay,$LoaiVe,$ChieuDi,$ChieuVe,$NgayDi,$NgayVe,$SoNguoiLon,$SoTreEm,$TreSoSinh,$ThanhTien,$NguoiDaiDien,$Phone,$Email,$Address,$YeuCau,$MaSoThue,$TenCongTy,$DiaChiCongTy,$DiaChiNhanHoaDon,$HTTT,$NgayDat;
+    public function datve($data=array())
+    {
+    $this->Id=isset($data['Id'])?$data['Id']:'';
+    $this->TrangThaiThanhToan=isset($data['TrangThaiThanhToan'])?$data['TrangThaiThanhToan']:'';
+    $this->MaDatVe=isset($data['MaDatVe'])?$data['MaDatVe']:'';
+    $this->HangBay=isset($data['HangBay'])?$data['HangBay']:'';
+    $this->LoaiVe=isset($data['LoaiVe'])?$data['LoaiVe']:'';
+    $this->ChieuDi=isset($data['ChieuDi'])?$data['ChieuDi']:'';
+    $this->ChieuVe=isset($data['ChieuVe'])?$data['ChieuVe']:'';
+    $this->NgayDi=isset($data['NgayDi'])?$data['NgayDi']:'';
+    $this->NgayVe=isset($data['NgayVe'])?$data['NgayVe']:'';
+    $this->SoNguoiLon=isset($data['SoNguoiLon'])?$data['SoNguoiLon']:'';
+    $this->SoTreEm=isset($data['SoTreEm'])?$data['SoTreEm']:'';
+    $this->TreSoSinh=isset($data['TreSoSinh'])?$data['TreSoSinh']:'';
+    $this->ThanhTien=isset($data['ThanhTien'])?$data['ThanhTien']:'';
+    $this->NguoiDaiDien=isset($data['NguoiDaiDien'])?$data['NguoiDaiDien']:'';
+    $this->Phone=isset($data['Phone'])?$data['Phone']:'';
+    $this->Email=isset($data['Email'])?$data['Email']:'';
+    $this->Address=isset($data['Address'])?$data['Address']:'';
+    $this->YeuCau=isset($data['YeuCau'])?$data['YeuCau']:'';
+    $this->MaSoThue=isset($data['MaSoThue'])?$data['MaSoThue']:'';
+    $this->TenCongTy=isset($data['TenCongTy'])?$data['TenCongTy']:'';
+    $this->DiaChiCongTy=isset($data['DiaChiCongTy'])?$data['DiaChiCongTy']:'';
+    $this->DiaChiNhanHoaDon=isset($data['DiaChiNhanHoaDon'])?$data['DiaChiNhanHoaDon']:'';
+    $this->HTTT=isset($data['HTTT'])?$data['HTTT']:'';
+    $this->NgayDat=isset($data['NgayDat'])?$data['NgayDat']:'';
+          $this->encode();
+    }
+    public function encode()
+        {
+            $this->Id=addslashes($this->Id);
+            $this->TrangThaiThanhToan=addslashes($this->TrangThaiThanhToan);
+            $this->MaDatVe=addslashes($this->MaDatVe);
+            $this->HangBay=addslashes($this->HangBay);
+            $this->LoaiVe=addslashes($this->LoaiVe);
+            $this->ChieuDi=addslashes($this->ChieuDi);
+            $this->ChieuVe=addslashes($this->ChieuVe);
+            $this->NgayDi=addslashes($this->NgayDi);
+            $this->NgayVe=addslashes($this->NgayVe);
+            $this->SoNguoiLon=addslashes($this->SoNguoiLon);
+            $this->SoTreEm=addslashes($this->SoTreEm);
+            $this->TreSoSinh=addslashes($this->TreSoSinh);
+            $this->ThanhTien=addslashes($this->ThanhTien);
+            $this->NguoiDaiDien=addslashes($this->NguoiDaiDien);
+            $this->Phone=addslashes($this->Phone);
+            $this->Email=addslashes($this->Email);
+            $this->Address=addslashes($this->Address);
+            $this->YeuCau=addslashes($this->YeuCau);
+            $this->MaSoThue=addslashes($this->MaSoThue);
+            $this->TenCongTy=addslashes($this->TenCongTy);
+            $this->DiaChiCongTy=addslashes($this->DiaChiCongTy);
+            $this->DiaChiNhanHoaDon=addslashes($this->DiaChiNhanHoaDon);
+            $this->HTTT=addslashes($this->HTTT);
+            $this->NgayDat=addslashes($this->NgayDat);
+        }
+    public function decode()
+        {
+            $this->Id=stripslashes($this->Id);
+            $this->TrangThaiThanhToan=stripslashes($this->TrangThaiThanhToan);
+            $this->MaDatVe=stripslashes($this->MaDatVe);
+            $this->HangBay=stripslashes($this->HangBay);
+            $this->LoaiVe=stripslashes($this->LoaiVe);
+            $this->ChieuDi=stripslashes($this->ChieuDi);
+            $this->ChieuVe=stripslashes($this->ChieuVe);
+            $this->NgayDi=stripslashes($this->NgayDi);
+            $this->NgayVe=stripslashes($this->NgayVe);
+            $this->SoNguoiLon=stripslashes($this->SoNguoiLon);
+            $this->SoTreEm=stripslashes($this->SoTreEm);
+            $this->TreSoSinh=stripslashes($this->TreSoSinh);
+            $this->ThanhTien=stripslashes($this->ThanhTien);
+            $this->NguoiDaiDien=stripslashes($this->NguoiDaiDien);
+            $this->Phone=stripslashes($this->Phone);
+            $this->Email=stripslashes($this->Email);
+            $this->Address=stripslashes($this->Address);
+            $this->YeuCau=stripslashes($this->YeuCau);
+            $this->MaSoThue=stripslashes($this->MaSoThue);
+            $this->TenCongTy=stripslashes($this->TenCongTy);
+            $this->DiaChiCongTy=stripslashes($this->DiaChiCongTy);
+            $this->DiaChiNhanHoaDon=stripslashes($this->DiaChiNhanHoaDon);
+            $this->HTTT=stripslashes($this->HTTT);
+            $this->NgayDat=stripslashes($this->NgayDat);
+        }
+}

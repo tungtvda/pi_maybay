@@ -1,0 +1,2 @@
+insert into vanphong (Address,Address_en,Phone,BanDo) values ('B44 Nguyễn Thị Định, Trung Hòa- Nhân Chính, Hà Nội','B44 Nguyen Thi Dinh Street, Trung Hoa-Nhan Chinh, Hanoi','043 222 143 /  0986 888 668','/pi_maybay/view/admin/Themes/kcfinder/upload/images/vanphong/bando.png');
+update vanphong set Address='B44 Nguyễn Thị Định, Trung Hòa- Nhân Chính, Hà Nội',Address_en='B44 Nguyen Thi Dinh Street, Trung Hoa-Nhan Chinh, Hanoi',Phone='043 222 143 /  0986 888 668',BanDo='/pi_maybay/view/admin/Themes/kcfinder/upload/images/vanphong/bando(1).png' where Id=1;
