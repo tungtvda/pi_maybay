@@ -1,0 +1,16 @@
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('1','Mr thế','tungphongtom','094.998.0762');
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('1','Mr thế','tungphongtom','094.998.0762');
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('1','Mr thế','tungphongtom','094.998.0762');
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('2','Mr thế','tungphongtom','094.998.0762');
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('2','Mr thế','tungphongtom','094.998.0762');
+insert into hotro (DanhMucId,Name,Skype,Phone) values ('2','Mr thế','tungphongtom','094.998.0762');
+update hotro set DanhMucId='2',LoaiHoTro='0',LoaiHoTro_en='Hỗ trợ đặt vé',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=6;
+update hotro set DanhMucId='2',LoaiHoTro='Đặt vé máy bay',LoaiHoTro_en='Ticket booking',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=5;
+update hotro set DanhMucId='2',LoaiHoTro='Hỗ trợ đặt vé',LoaiHoTro_en='Support Ticketing',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=6;
+update hotro set DanhMucId='2',LoaiHoTro='Khách sạn',LoaiHoTro_en='Hotel',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=4;
+update hotro set DanhMucId='2',LoaiHoTro='Du thuyền',LoaiHoTro_en='Yatch',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=3;
+update hotro set DanhMucId='1',LoaiHoTro='Hỗ trợ đặt vé',LoaiHoTro_en='Support Ticketing',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=6;
+update hotro set DanhMucId='1',LoaiHoTro='Đặt vé máy bay',LoaiHoTro_en='Ticket booking',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=5;
+update hotro set DanhMucId='2',LoaiHoTro='Xe - tàu hỏa',LoaiHoTro_en='Vehicles - Train',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=2;
+update hotro set DanhMucId='2',LoaiHoTro='Xe - tàu hỏa',LoaiHoTro_en='Vehicles - Train',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=1;
+update hotro set DanhMucId='1',LoaiHoTro='Hỗ trợ đặt vé',LoaiHoTro_en='Support Ticketing',Name='Mr thế',Skype='tungphongtom',Phone='094.998.0762' where Id=5;

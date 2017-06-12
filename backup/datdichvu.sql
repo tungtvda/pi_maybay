@@ -1,0 +1,2 @@
+insert into datdichvu (LoaiDichVu,TrangThai,Name,Email,Phone,Address,NoiDung,Created) values ('Hotels Pumal Hanoi','','Hotels Pumal Hanoi','tungtv.soict@gmail.com','01676331802','Đông Anh, Hà Nội','yêu cầu cần đặt gấp','15-07-11 06:52:08');
+insert into datdichvu (LoaiDichVu,TrangThai,Name,Email,Phone,Address,NoiDung,Created) values ('Hotels Pumal Hanoi','','Trần Văn Tùng','tungtv.soict@gmail.com','01676331802','Hà Nội','Yêu cầu','15-07-11 11:09:58');

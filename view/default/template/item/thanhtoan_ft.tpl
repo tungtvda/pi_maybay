@@ -1,0 +1,1 @@
+<li class="col-md-3 col-sm-3 col-xs-3"><a href="{Link}"><img src="{Img}" title="{Name}" alt="{Name}" /></a></li>

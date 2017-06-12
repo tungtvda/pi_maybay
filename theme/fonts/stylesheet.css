@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Californian-FB-Italic';
+    src: url('Californian-FB-Italic.eot');
+    src: url('Californian-FB-Italic.eot?#iefix') format('embedded-opentype'),
+         url('Californian-FB-Italic.woff') format('woff'),
+         url('Californian-FB-Italic.ttf') format('truetype'),
+         url('Californian-FB-Italic.svg#Californian-FB-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: 'Californian-FB-Regular';
+    src: url('Californian-FB-Regular.eot');
+    src: url('Californian-FB-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Californian-FB-Regular.woff') format('woff'),
+         url('Californian-FB-Regular.ttf') format('truetype'),
+         url('Californian-FB-Regular.svg#Californian-FB-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+@font-face {
+    font-family: 'Californian-FB-Bold';
+    src: url('Californian-FB-Bold.eot');
+    src: url('Californian-FB-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Californian-FB-Bold.woff') format('woff'),
+         url('Californian-FB-Bold.ttf') format('truetype'),
+         url('Californian-FB-Bold.svg#Californian-FB-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }

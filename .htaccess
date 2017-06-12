@@ -1,0 +1,53 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.kzone.vn
+ErrorDocument 404 /404.php
+RewriteRule ^(.*)$ http://radio.kzone.vn/$1 [R=permanent,L]
+RewriteRule ^admin controller/admin/index.php
+RewriteRule ^login controller/admin/login.php
+
+RewriteRule ^dich-vu/$ controller/default/dichvu.php
+RewriteRule ^dich-vu/page-([0-9]+)$ controller/default/dichvu.php?page=$1
+RewriteRule ^dich-vu/(.*)-([0-9]+).html$ controller/default/chitietdichvu.php?Id=$2
+
+
+RewriteRule ^tin-khuyen-mai/$ controller/default/tinkhuyenmai.php
+RewriteRule ^tin-khuyen-mai/page-([0-9]+)$ controller/default/tinkhuyenmai.php?page=$1
+RewriteRule ^tin-khuyen-mai/(.*)-([0-9]+).html$ controller/default/chitiettinkhuyenmai.php?Id=$2
+
+RewriteRule ^ve-noi-dia/$ controller/default/venoidia.php
+RewriteRule ^ve-noi-dia/(.*)-([0-9]+).html$ controller/default/chitietvenoidia.php?Id=$2
+RewriteRule ^ve-quoc-te/$ controller/default/vequocte.php
+RewriteRule ^ve-quoc-te/(.*)-([0-9]+).html$ controller/default/chitietvenoidia.php?Id=$2
+
+RewriteRule ^dieu-khoan-dieu-kien.html$ controller/default/dieukhoan.php
+RewriteRule ^chinh-sach-rieng-tu.html$ controller/default/chinhsach.php
+RewriteRule ^huong-dan-thanh-toan.html$ controller/default/huongdan.php
+RewriteRule ^thong-tin-chuyen-khoan.html$ controller/default/chuyenkhoan.php
+RewriteRule ^hoi-dap.html$ controller/default/hoidap.php
+RewriteRule ^gioi-thieu.html$ controller/default/gioithieu.php
+
+RewriteRule ^dang-ky.html$ controller/default/dangky.php
+
+RewriteRule ^dang-ky-thanh-cong/(.*)/(.*)$ controller/default/dangkythanhcong.php?email=$1&pass=$2
+
+RewriteRule ^dang-xuat.html$ controller/default/dangxuat.php
+
+RewriteRule ^lien-he.html$ controller/default/lienhe.php
+
+RewriteRule ^ve-noi-dia/$ controller/default/venoidia.php
+RewriteRule ^ve-quoc-te/$ controller/default/vequocte.php
+
+RewriteRule ^tim-kiem$ controller/default/timkiem.php
+RewriteRule ^tim-kiem-chuyen-bay/(.*)$ controller/default/timchuyenbay.php
+
+RewriteRule ^tim-kiem-chuyen-bay-quoc-te/(.*)$ controller/default/timchuyenbay.php
+
+RewriteRule ^dang-nhap-facebook/$ controller/default/facebook.php
+RewriteRule ^dat-ve/$ controller/default/datve.php
+RewriteRule ^dat-ve/?sessionid=(.*)&outbound=(.*)&inbound=(.*)$ controller/default/datve.php?sessionid=$1&outbound=$2&inbound=$3
+
+RewriteRule ^ket-qua-tim-kiem-noi-dia/(.*)$ controller/default/ketquatimkiemnoidia.php?sessionid=$1
+RewriteRule ^ket-qua-tim-kiem-quoc-te/(.*)$ controller/default/ketquatimkiemquocte.php?sessionid=$1
+
+RewriteRule ^confirmation/$ controller/default/confirmation.php
+RewriteRule ^confirmation/?orderid=(.*)&method=(.*)$ controller/default/confirmation.php?orderid=$1&method=$2
